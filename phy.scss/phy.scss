@@ -54,9 +54,9 @@ get to the section that you need.
 // @import "atoms/embed";
 // @import "atoms/island";
 // @import "atoms/media";
-@import "atoms/split";
+// @import "atoms/split";
 @import "atoms/visuallyhidden";
-@import "atoms/cta";
+// @import "atoms/cta";
 // @import "atoms/rules";
 // @import "atoms/cta";
 // @import "atoms/big-error";
@@ -116,25 +116,8 @@ get to the section that you need.
 @import "molecules/site-main";
 @import "molecules/site-footer";
 @import "molecules/site-wrap";
-@import "molecules/content-box";
-@import "molecules/vcard";
-@import "molecules/project-list";
-@import "molecules/project-detail";
-// @import "molecules/lede--home";
-// @import "molecules/btn--submit";
 // @import "molecules/article";
-// @import "molecules/detile";
-// @import "molecules/link--block__text";
-// @import "molecules/back-to-top";
-
-// 	/*link stuff*/
-// 	@import "molecules/link/link--tr";
-// 	@import "molecules/link/link--header";
 
  	/*js-plugins*/
 	@import "molecules/js-plugins/responsive-nav";
-	@import "molecules/js-plugins/tabs";
-	@import "molecules/js-plugins/carousel";
-	@import "molecules/js-plugins/image-viewer";
-// 	@import "molecules/js-plugins/tablesorter";
 	
