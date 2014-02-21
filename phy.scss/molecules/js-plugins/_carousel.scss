@@ -1,0 +1,57 @@
+.carousel {
+  max-width: 880px;
+  overflow:hidden;
+}
+
+
+  .carousel__wrap {
+    width: 100%;
+    padding-bottom: 48.97%;
+    position: relative;
+  }
+    .carousel__wrap > b, .carousel__nav span {
+      position: absolute;
+      left:-9999px;
+    }
+    .carousel__img {
+      border: 1px solid $base-font-color;
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: 100%;
+      max-height:100%;
+      .csstransitions &.hide {
+        @include vendor(transform, rotateY(90deg));
+      }
+      .csstransitions & {
+        perspective: 1000;
+        transform-style: preserve-3d;
+        @include vendor(transition, all 380ms linear);
+      }
+    }
+    .carousel__nav {
+      position: absolute;  
+      display: inline-block;
+      width: 46px;
+      height: 100%;
+      top: 0;
+      text-align: center;
+      background-image: url(#{$static_url}/images/image-nav-arrows.png);
+      background-repeat: no-repeat;
+      background-color:rgba(0,0,0,0.1);
+      @include opacity(0);
+      .js .carousel:hover & {
+        @include opacity(1);
+      }
+    }
+
+    .carousel__prev {
+      left:0px;
+      z-index:20;
+      background-position: left center;
+    }
+    .carousel__next {
+      right:0px;
+      z-index:20;
+      background-position: right center;
+    }

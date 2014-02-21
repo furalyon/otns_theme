@@ -1,0 +1,60 @@
+/*------------------------------------*\
+		$FORM-FIELDS
+\*------------------------------------*/
+
+/**
+ * Group sets of form fields in a list, e.g.:
+ *
+	 <ul class=form-fields>
+			 <li>
+					 <label />
+					 <input />
+			 </li>
+			 <li>
+					 <label />
+					 <select />
+			 </li>
+			 <li>
+					 <label />
+					 <input />
+			 </li>
+	 </ul>
+ *
+ */
+
+.form-fields {
+	list-style: none;
+	margin: 0;
+
+	> li {
+		@extend %sass-margin-bottom;
+	}
+
+	> li:last-child {
+		margin-bottom: 0;
+	}
+
+	.text-input {
+		width: 100%;
+	}
+
+	.errorlist {
+		@extend .list--inline;
+	}
+
+	@include grid-media-query('lap-and-on') {
+		label {
+			display: inline-block;
+			width: 20%;
+		}
+
+		.text-input {
+			width: 80%;
+		}
+
+		.errorlist {
+			margin-left: 20%;
+		}
+	}
+
+}

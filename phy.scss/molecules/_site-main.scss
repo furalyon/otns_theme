@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    $SITE-MAIN
+\*------------------------------------*/
+
+.site-main {
+	padding: $half-spacing-unit;
+	position: relative;
+
+	/**
+	 * special background for home page
+	 * home class added using page-class.js
+	 */
+	.home & {
+	}
+}
+
+
+

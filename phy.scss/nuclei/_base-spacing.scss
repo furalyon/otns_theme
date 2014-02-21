@@ -1,0 +1,82 @@
+/*------------------------------------*\
+    $BASE-SPACING
+\*------------------------------------*/
+
+/**
+ * base margin-bottom stuff for various elements
+ *
+ */
+
+/**
+ * Where `margin-bottom` is concerned, this value will be the same as the
+ * base line-height. This allows us to keep a consistent vertical rhythm.
+ * As per: csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+%sass-margin-bottom,
+%base-bottom-spacing {
+    @include px-rem(margin-bottom, $base-spacing-unit);
+}
+
+%half-bottom-spacing {
+	@include px-rem(margin-bottom, $base-spacing-unit / 2);
+}
+
+%double-bottom-spacing {
+	@include px-rem(margin-bottom, $base-spacing-unit * 2);
+}
+
+%double-left-margin {
+    @include px-rem(margin-left, $base-spacing-unit * 2)
+}
+
+
+
+
+
+/**
+ * Setting the bottom margin for some Base elements and classes 
+ * to keep the consistency
+ */
+hgroup,
+ul,ol,dl,
+blockquote,p,address,
+table,
+fieldset,figure,
+pre,
+/**
+ * basic Objects and abstractions
+ */
+.island,
+.islet {
+    @extend %base-bottom-spacing;
+
+    .islet & {
+    	@extend %half-bottom-spacing;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @extend %half-bottom-spacing;
+}
+
+/**
+ * Doubled up `margin-bottom` helper class.
+ */
+.landmark {
+    @extend %double-bottom-spacing;
+}
+
+
+
+
+
+/**
+ * base table cell padding
+ * keeping this in a class as I had to apply the same values to tr--link object
+ */
+%base-table-cell-padding {
+    padding:$base-spacing-unit / 4;
+    @media screen and (min-width:480px) {
+        padding:$half-spacing-unit;
+    }    
+}

@@ -1,0 +1,59 @@
+/*------------------------------------*\
+		$LIST--INLINE-BLOCK
+\*------------------------------------*/
+
+/**
+ * Create inline blocky lists of content, e.g.:
+ *
+	<ul class=list--inline-block>
+		<li class="li">Foo</li><!--
+		--><li class="li">Bar</li><!--
+		--><li class="li">Baz</li><!--
+		--><li class="li"><a class="list--inline-block__link" href=#>Foo Bar Baz</a></li>
+	</ul>
+ *
+ * NOTE: NEED TO USE THE COMMENTS AS IN EXAMPLETO AVOID WHITESPACE 
+ * CREATED BY CARRIAGE RETURNS (SPACE CREATED BETWEEN TO 'li'S)
+ *
+ * Demo: http://codepen.io/affenity/pen/pgnlD
+ * 
+ * modify to change style to suite your theme. extend in molecule to create different types
+ */
+
+.list--inline-block {
+	/*to cancel the margins and paddings from default ul styling*/
+	margin-left:0;
+	margin-right:0;
+	padding:0;
+
+	/*no bullets*/
+	list-style:none;
+
+	/*dont go over screen width. For responsive, fluid li*/
+	max-width:100%;
+
+	/*to keep the li blocks in the center at all widths with any number of columns*/
+	text-align: center;
+
+	> li {
+		/*key part*/
+		display:inline-block;
+
+		/*to reset content inside li to left align as we set center align on the list*/
+		text-align: left;
+
+		/*dont go over container width. For responsive, fluid li*/
+		max-width:100%;
+
+		/**
+		 * style as per need. 
+		   width:200px;
+		   border: 1px solid black;
+	 	   margin:$half-spacing-unit/2;
+		*/
+	}
+}
+
+.list--inline-block__link {
+	display:block;
+}

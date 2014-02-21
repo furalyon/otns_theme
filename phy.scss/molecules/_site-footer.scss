@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    $SITE-FOOTER
+\*------------------------------------*/
+
+.site-footer {
+	padding: $half-spacing-unit;
+	@extend .milli;
+	p {
+		margin-bottom:$half-spacing-unit;
+		padding-left:4%;
+		padding-right:4%;
+	}
+	//create space for page menu link at the bottom for less than desk widths
+	@include media-query(0,60em) {
+		padding-bottom:2em;
+	}
+}

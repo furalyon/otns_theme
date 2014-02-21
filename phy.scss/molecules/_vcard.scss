@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    $VCARD
+\*------------------------------------*/
+
+
+.vcard-wrap {
+	@extend %grid;
+}
+.vcard {
+	@extend %grid__item;
+	@extend %one-whole;
+	@extend %lap--one-half;
+	@extend %base-bottom-spacing;
+	padding-left:5%;
+}

@@ -1,0 +1,47 @@
+.image-viewer {
+  //max-width: 880px;
+  overflow:hidden;
+  text-align: center;
+}
+
+
+  .image-viewer__wrap {
+    position: relative;
+    display: inline-block;
+  }
+    .image-viewer__wrap > b, .image-viewer__nav span {
+      position: absolute;
+      left:-9999px;
+    }
+    .image-viewer__img {
+      border: 1px solid $base-font-color;
+      max-width: 100%;
+    }
+    .image-viewer__nav {
+      position: absolute;  
+      display: inline-block;
+      width: 46px;
+      height: 100%;
+      top: 0;
+      text-align: center;
+      background-image: url(#{$static_url}/images/image-nav-arrows.png);
+      background-repeat: no-repeat;
+      background-color:rgba(0,0,0,0.1);
+      .js .image-viewer:hover & {
+        @include opacity(0);
+      }
+      .js .image-viewer__wrap:hover & {
+        @include opacity(1);
+      }
+    }
+
+    .image-viewer__prev {
+      left:0px;
+      z-index:20;
+      background-position: left center;
+    }
+    .image-viewer__next {
+      right:0px;
+      z-index:20;
+      background-position: right center;
+    }

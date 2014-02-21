@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    $CODE
+\*------------------------------------*/
+
+code,
+kbd,
+pre,
+samp {
+    @extend %base-monospace-face;
+}
+
+/**
+ * Use an explicit font stack to ensure browsers render correct `line-height`.
+ */
+    pre mark {
+        background:none;
+        border-bottom:1px solid;
+        color:inherit;
+    }
+
+
+/**
+ * base code styling. modify for the theme
+ */
+pre {
+	background-color:#333;
+	color:$base-bg-color;
+	border-radius:$brand-round;
+	padding:$half-spacing-unit;
+	overflow:auto;
+}

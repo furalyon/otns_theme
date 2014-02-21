@@ -1,0 +1,49 @@
+/*------------------------------------*\
+	$RESPONSIVE-NAV
+\*------------------------------------*/
+
+%responsive-nav {
+  
+	/*For width until the break point*/
+	.js & {
+		clip: rect(0 0 0 0);
+		max-height: 0;
+		position: absolute;
+		display: block;
+		overflow: hidden;
+		zoom: 1;    
+	}
+
+	&.opened {
+		max-height: 9999px;
+	}
+
+	@include media-query($site-nav-breakpoint) {
+		.js & {
+			position: relative;
+			max-height: none;      
+		}
+	}
+
+}
+
+/**
+ * to style the nav toggle button
+ *
+ * using hashed class for performance reason. I avoid id selectors in css, completely.
+ */
+
+.nav-toggle {
+	@include media-query($site-nav-breakpoint) {
+		display: none;
+	}
+	padding-top:5px;
+	text-align: center;
+	color:#f9f9f9;
+	width: 100%;
+	height: $nav-toggle-height;//defined in site-header file
+
+	position: absolute;
+	//left:0px;
+	bottom: 0px;
+}

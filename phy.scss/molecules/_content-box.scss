@@ -1,0 +1,63 @@
+/*------------------------------------*\
+    $CONTENT-BOX
+\*------------------------------------*/
+
+/*
+ * object for all the content boxes in the hti project
+ */
+
+$content-box-bg-color:#ffffcc;
+.content-box {
+	@extend %grid__item;
+	@extend %one-whole;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	p {
+		margin-bottom:0;
+	}
+	a {
+		@extend .link--block;
+	}
+}
+.content-box__text {
+	position: relative;
+	padding:$half-spacing-unit;
+	min-height:204px;
+	padding-bottom:$base-spacing-unit*1.5;
+}
+.content-box--one-half {
+	@extend %lap--one-half;
+}
+.content-box--one-third {
+	@extend %lap--one-third;
+}
+.content-box__div {
+	background-color:$content-box-bg-color;
+	// .content-box--link & {
+	// 	background-color:$link-color;
+	// 	color: $base-bg-color;
+	// }
+	// .content-box--link:hover & {
+	// 	background-color:$brand-color;
+	// }
+}
+.csstransitions {
+	.content-box__div, .content-box a {
+		@include vendor(transition, all 450ms ease);
+	}
+}
+.content-box--link {
+	.content-box__div {
+		background-color: $link-color;
+	}
+	&:hover .content-box__div {
+		background-color: $brand-color;
+		color: $base-bg-color;
+	}
+	a {
+		color:$base-font-color;
+	}
+	&:hover a {
+		color: $base-bg-color;
+	}
+}

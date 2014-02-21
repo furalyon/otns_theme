@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    $SITE-HEADER
+\*------------------------------------*/
+$nav-toggle-height:36px;
+.site-header {
+	background:  #474747;
+	min-height:30px;
+	position:relative;
+	padding-bottom:$nav-toggle-height;
+	@include media-query($site-nav-breakpoint) {
+		padding-bottom:0;
+	}
+}

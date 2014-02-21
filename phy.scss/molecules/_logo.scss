@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    $LOGO
+\*------------------------------------*/
+
+.logo {
+	text-align: center;
+	@extend %base-bottom-spacing;
+}
+
+.logo__img{
+	display: inline-block;
+
+	/**
+	 * exact size of the bitmap version of the logo
+	 */
+	width: 221px;
+	height: 66px;
+
+	background-image:  url(#{$static_url}images/logo.png);
+	background-repeat: no-repeat;
+	background-size:   100% 100%;
+
+	// .no-svg & {
+	// 	background-image:  url(#{$static-url}images/common/logo.png);
+	// }
+}

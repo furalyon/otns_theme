@@ -1,0 +1,140 @@
+/*------------------------------------*\
+    PHY.SCSS
+\*------------------------------------*/
+
+/*
+The main file that brings everything together. 
+
+All the framework modules are imported below. comment/uncomment as needed.
+
+Treat this as a table of contents. Search with $<section-title> to 
+get to the section that you need.
+*/
+
+
+
+
+
+/*------PROPERTIES------*/
+@import "properties/properties";
+
+
+/*------NUCLEI------*/
+@import "nuclei/mixins";
+@import "nuclei/normalize";
+@import "nuclei/reset";
+@import "nuclei/clearfix";
+@import "nuclei/base-spacing";
+@import "nuclei/type-globals";
+@import "nuclei/auto-margin";
+@import "nuclei/borders";
+@import "nuclei/brand";
+
+
+/*------QUARKS------*/
+@import "quarks/html";
+@import "quarks/body";
+@import "quarks/headings";
+@import "quarks/link";
+@import "quarks/lists";
+@import "quarks/img";
+// @import "quarks/fieldset";
+// @import "quarks/rule";
+// @import "quarks/code";
+// @import "quarks/quotes";
+// @import "quarks/tables";
+// @import "quarks/em";
+
+
+/*------ATOMS------*/
+// @import "atoms/arrows";
+// @import "atoms/buttons";
+// @import "atoms/breadcrumb";
+@import "atoms/grids";
+// @import "atoms/embed";
+// @import "atoms/island";
+// @import "atoms/media";
+@import "atoms/split";
+@import "atoms/visuallyhidden";
+@import "atoms/cta";
+// @import "atoms/rules";
+// @import "atoms/cta";
+// @import "atoms/big-error";
+
+// 	/*heading stuff*/
+// 	@import "atoms/heading/hgroup__hN";
+
+// 	/*link stuff*/
+ 	@import "atoms/link/link--block";
+ 	// @import "atoms/link/link--inline-block";
+	@import "atoms/link/link--more";
+
+ 	/*paragraph stuff*/
+//  @import "atoms/paragraph/lede";
+// 	@import "atoms/paragraph/columns";
+
+// 	/*image stuff*/
+// 	@import "atoms/image/blanket";
+// 	@import "atoms/image/placement";
+
+// 	/*list stuff*/
+// 	@import "atoms/list/list__prefix-line";
+// 	@import "atoms/list/li--arrow";
+	@import "atoms/list/list--block";
+// 	@import "atoms/list/list--inline";
+//  @import "atoms/list/list--inline-block";
+
+// 	/*table stuff*/
+// 	@import "atoms/table/cell-alignments";
+// 	@import "atoms/table/table--bordered";
+// 	@import "atoms/table/table--striped";
+// 	@import "atoms/table/table-col-widths";
+
+// 	/*form stuf*/
+// 	@import "atoms/form/check-list";
+// 	@import "atoms/form/form-fields";
+// 	@import "atoms/form/help-text";
+// 	@import "atoms/form/label";
+// 	@import "atoms/form/spoken-form";
+// 	@import "atoms/form/success-failure";
+// 	@import "atoms/form/text-input";
+// 	@import "atoms/form/field--required";
+
+// 	/*quote stuff*/
+// 	@import "atoms/quote/quote--sourced";
+
+// 	/*code stuf*/
+// 	@import "atoms/code/line-numbers";
+// 	@import "atoms/code/code-comment";
+// 	@import "atoms/code/code__prefix";
+
+
+/*------MOLECULES------*/
+@import "molecules/site-header";
+@import "molecules/site-nav";
+@import "molecules/logo";
+@import "molecules/site-main";
+@import "molecules/site-footer";
+@import "molecules/site-wrap";
+@import "molecules/content-box";
+@import "molecules/vcard";
+@import "molecules/project-list";
+@import "molecules/project-detail";
+// @import "molecules/lede--home";
+// @import "molecules/btn--submit";
+// @import "molecules/article";
+// @import "molecules/detile";
+// @import "molecules/link--block__text";
+// @import "molecules/back-to-top";
+
+// 	/*link stuff*/
+// 	@import "molecules/link/link--tr";
+// 	@import "molecules/link/link--header";
+
+ 	/*js-plugins*/
+	@import "molecules/js-plugins/responsive-nav";
+	@import "molecules/js-plugins/tabs";
+	@import "molecules/js-plugins/carousel";
+	@import "molecules/js-plugins/image-viewer";
+// 	@import "molecules/js-plugins/tablesorter";
+	

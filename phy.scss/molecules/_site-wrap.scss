@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    $SITE-WRAPPER
+\*------------------------------------*/
+
+.site-wrap {
+	max-width:75em;
+	@extend .auto-margin;
+}
+
+.site-main__wrap {
+	@extend %grid;
+}
+.page-header, .page-content {
+	@extend %grid__item;
+	@extend %one-whole;
+	padding:$half-spacing-unit;
+}
+.page-header {
+	@extend %desk--one-quarter;
+	@include grid-media-query('desk') {
+		img, p {
+			margin-right:$half-spacing-unit;
+		}
+	}
+}
+.page-content {
+	@extend %desk--three-quarters;
+}

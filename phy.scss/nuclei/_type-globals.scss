@@ -1,0 +1,95 @@
+/*------------------------------------*\
+    $TYPE-GLOBALS
+\*------------------------------------*/
+
+/**
+ * sizes related to heading levels
+ */
+
+.brand-type {
+    font-family:$brand-face;
+    font-style: normal;
+    // text-transform:uppercase;
+    font-weight:normal;
+}
+
+.alpha {
+    @include font-size($h1-size);
+    @extend .brand-type;
+}
+.beta {
+    @include font-size($h2-size);
+    @extend .brand-type;
+    color:$brand-color;
+}
+.gamma {
+    @include font-size($h3-size);
+    @extend .brand-type;
+}
+.delta {
+    @include font-size($h4-size);
+    @extend .brand-type;
+}
+.epsilon {
+    @include font-size($h5-size);
+    @extend .brand-type;
+}
+.zeta {
+    @include font-size($h6-size);
+    @extend .brand-type;
+}
+
+
+
+
+
+/**
+ * A series of classes for setting massive type; for use in heroes, mastheads,
+ * promos, etc.
+ */
+
+.giga {
+    @include font-size($giga-size);
+}
+.mega {
+    @include font-size($mega-size);
+}
+.kilo {
+    @include font-size($kilo-size);
+}
+
+
+
+
+
+/**
+ * A series of classes for setting smaller type; for use in footers, post-times etc.
+ */
+.milli {
+    @include font-size($milli-size);
+}
+.micro {
+    @include font-size($micro-size);
+}
+
+
+
+
+
+/**
+ * using a silent class to set monospace font-family at various places to reduce some size
+ */
+%base-monospace-face {
+    font-family:$base-monospace-face;
+}
+
+
+
+
+
+/**
+ * font with low key color as in "posted time"
+ */
+.low-key {
+    color: $low-key-font-color;
+}

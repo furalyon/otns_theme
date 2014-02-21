@@ -1,0 +1,14 @@
+/*------------------------------------*\
+		$CTA
+\*------------------------------------*/
+
+.cta {
+    padding:$half-spacing-unit;
+    border:1px solid $brand-color;
+    > p:last-child {
+        margin-bottom:0;
+    }
+}
+
+.cta__btn {
+}
