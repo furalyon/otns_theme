@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ *
+ * sass --watch style.scss:style.min.css --style compressed
+ *
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+
+
+/**
+ * Setup
+ */
+@import "variables";
+@import "framework/sceletonss";
+
+@import "ui/body";
+@import "ui/generic";
+@import "ui/headings";
+@import "ui/links";
+@import "ui/site-header";
+@import "ui/content";
+@import "ui/site-footer";
+@import "ui/buttons";
+@import "ui/fields";
+@import "ui/article";
+@import "ui/project-list";
+//@import "ui/list";
+

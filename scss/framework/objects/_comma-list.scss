@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    $COMMA-LIST
+\*------------------------------------*/
+/**
+ * Create inline comma-separated lists of content, e.g.:
+ *
+  <ul class="comma-list">
+    <li class="li">HTML</li>
+    <li class="li">CSS</li>
+    <li class="li">Sass</li>
+    <li class="li">JavaScript</li>
+  </ul>
+ *
+ * Extend this object in your theme stylesheet.
+ *
+ * Demo: http://codepen.io/affenity/pen/hgdpl
+ *
+ */
+
+
+ /*set basic bottom margin on the wrapper*/
+.comma-list {
+  margin-bottom:$base-spacing-unit;
+}
+
+ /*reset any margins and paddings from the default lists(ul)*/
+.comma-list__content {
+  list-style:none;
+  padding:0;
+  margin-left:0;
+  margin-right:0;
+  display:inline;
+
+  /*list item inline and set comma on after content*/
+  > li {
+    display:inline;
+    &:after {
+      content:', ';      
+    }
+    /*remove comma for the last item*/
+    &:last-child:after {
+      content:'';
+    }
+  }
+}
+
+/*Make header normal sized and inline*/
+.comma-list__header {
+  display:inline;
+  font-weight:normal;
+  font-size:$base-font-size;
+}

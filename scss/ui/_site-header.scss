@@ -1,0 +1,59 @@
+/*SITE HEADER*/
+.site-header {
+	@extend %site-wrap;
+	position: relative;
+}
+
+/*Grid */
+.site-header {
+	@extend %grid;
+}
+.site-nav, .logo {
+	@extend %one-whole;
+	@extend %grid__item;	
+}
+.logo {
+	@extend %lap-and-on--one-fifth;
+}
+.site-nav {
+	@extend %lap-and-on--four-fifths;
+}
+
+
+/*LOGO Stuff*/
+.logo{
+	padding:$half-spacing-unit;
+}
+.logo__img {
+	display:block;
+	width:91px;
+	height:60px;
+	background-image:  url(#{$static-url}images/common/logo.svg);
+	background-repeat: no-repeat;
+	background-size:   100% 100%;
+}
+.no-svg .logo__img {
+	background-image:  url(#{$static-url}images/common/logo.png);
+}
+// .logo__tag {
+// 	@extend .alpha;
+// }
+
+/*NAV stuff*/
+.site-nav {
+	@include font-size(18px, $line-height: false);
+	@extend %responsive-nav;
+	> ul {
+		/*Basic nav class in extend in the responsive nav scss file*/
+
+		/*spaced units only beyond responsive breakpoint*/
+		@extend %post-responsive-breakpoint-nav--spaced;
+		margin-bottom: 0;
+		> li > a {
+			/*A banner flow effect beyond responsive breakpoint when spaced*/
+			@include media-query($site-nav-fold-breakpoint) {
+					padding-top:40px;
+			}
+		}
+	}
+}

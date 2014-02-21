@@ -1,0 +1,12 @@
+body {
+	background-color: $brand-color;
+
+	@include media-query($site-nav-fold-breakpoint) {
+		background-image: url(#{$static-url}images/common/bg-vert.png),url(#{$static-url}images/common/bg-vert.png);
+		background-repeat:  repeat-y, repeat-y;
+		background-position: top left, top right;
+		padding-left: 10px;
+		padding-right: 10px;
+		background-attachment: fixed;
+	}
+}

@@ -1,0 +1,39 @@
+/*
+* 
+* Inline Text Editing By Textarea Replacement
+*
+* Commonly used to edit a description/notes/comment being displayed as a paragraph
+* 
+* this object supports my js module inline-editing.js. refer to it for details
+* 
+*/
+.inline-editing {
+	position: relative;
+}
+
+.inline-editing-display, .inline-editing-textarea {
+	margin-bottom: $half-spacing-unit/2;
+}
+
+.inline-editing-textarea {
+	width:100%;
+}
+// .inline-editing-link, .inline-editing-submit {
+// 	display:block;
+// 	position: relative;
+// 	botton: 1px;
+// 	left: 40%;
+// }
+.inline-editing-link {
+	@extend .link--simple;
+}
+
+.inline-editing-submit {
+	@extend %btn;
+	@extend %btn--small;
+	@extend %btn--positive;
+	&:hover {
+		top:none;
+		bottom:0;
+	}
+}

@@ -1,0 +1,14 @@
+/*HEADING*/
+
+.alpha {
+	text-align: center;
+	color: $brand-color;
+}
+
+@include headings(1, 4){
+	font-weight: normal;
+}
+
+hgroup {
+	text-align: center;
+}
