@@ -9,13 +9,15 @@
  *
  */
 
+$rule-width:2px;
+
 %rule {
     color: $base-ui-color;
     border: none;
-    border-bottom-width: 1px;
+    border-bottom-width: $rule-width;
     border-bottom-style: solid;
-    margin-bottom: $half-spacing-unit - 1px;
-    margin-bottom: (($half-spacing-unit - 1px) / $base-font-size)*1rem;
+    margin-bottom: $base-spacing-unit - $rule-width;
+    margin-bottom: (($base-spacing-unit - $rule-width) / $base-font-size)*1rem;
 }
 
 
@@ -64,7 +66,7 @@
 
 .cssgradients %rule--fading {
     border: none;
-    height: 1px;
+    height: $rule-width;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 550, from($base-ui-color), to(rgba(0,0,0,0)));
     background: -moz-radial-gradient(bottom, $base-ui-color 39%, rgba(0,0,0,0) 65%);
     background:         gradient(radial, 50% 50%, 0, 50% 50%, 550, from($base-ui-color), to(rgba(0,0,0,0)));
