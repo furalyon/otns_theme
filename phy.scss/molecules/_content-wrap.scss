@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    $CONTENT-WRAP
+\*------------------------------------*/
+
+.content-wrap {
+	@extend %grid;
+}
+
+.site-main,
+.site-side,
+.site-side__left,
+.site-side__right {
+	@extend %grid__item;
+	@extend %one-whole;
+}
+
+.site-main {
+	@extend %desk--two-thirds;
+	@extend %wide--three-fifths;
+}
+
+.site-side {
+	@extend %desk--one-third;
+	@extend %wide--two-fifths;
+}
+
+.site-side__left, .site-side__right {
+	@extend %wide--one-half;
+}

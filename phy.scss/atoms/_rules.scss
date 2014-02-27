@@ -16,9 +16,11 @@ $rule-width:2px;
     border: none;
     border-bottom-width: $rule-width;
     border-bottom-style: solid;
-    margin-bottom: $base-spacing-unit - $rule-width;
-    margin-bottom: (($base-spacing-unit - $rule-width) / $base-font-size)*1rem;
+    // margin-bottom: $base-spacing-unit - $rule-width;
+    // margin-bottom: (($base-spacing-unit - $rule-width) / $base-font-size)*1rem;
 }
+
+$default-border: $rule-width solid $base-ui-color;
 
 
 /**

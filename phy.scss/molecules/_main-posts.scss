@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    $MAIN-POSTS
+\*------------------------------------*/
+
+.main-posts {
+	@extend .list--block;
+}
+
+.main-posts__article {
+	@extend .list--block__li;
+	@extend .media;
+}
+
+.main-posts__article__img {
+	@extend .media__img;
+	@extend %lap--one-third;
+	// @extend %desk--one-quarter;
+}
+
+.main-posts__article__body {
+	@extend .media__body;
+	@extend %lap--two-thirds;
+	// @extend %desk--three-quarters;
+
+	> h3 a {
+		color: $base-font-color;
+		@extend .delta;
+		&:hover {
+			color: $brand-color-complement;
+			background: $brand-color-2;
+		}
+	}
+
+	.list--inline__prefix {
+		@extend .epsilon;
+	}
+}

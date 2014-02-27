@@ -52,8 +52,8 @@ get to the section that you need.
 // @import "atoms/breadcrumb";
 @import "atoms/grids";
 // @import "atoms/embed";
-// @import "atoms/island";
-// @import "atoms/media";
+@import "atoms/island";
+@import "atoms/media";
 // @import "atoms/split";
 @import "atoms/visuallyhidden";
 // @import "atoms/cta";
@@ -81,8 +81,8 @@ get to the section that you need.
 // 	@import "atoms/list/list__prefix-line";
 // 	@import "atoms/list/li--arrow";
 	@import "atoms/list/list--block";
-// 	@import "atoms/list/list--inline";
-//  @import "atoms/list/list--inline-block";
+	@import "atoms/list/list--inline";
+	@import "atoms/list/list--inline-block";
 
 // 	/*table stuff*/
 // 	@import "atoms/table/cell-alignments";
@@ -116,6 +116,9 @@ get to the section that you need.
 @import "molecules/site-main";
 @import "molecules/site-footer";
 @import "molecules/site-wrap";
+@import "molecules/content-wrap";
+@import "molecules/main-posts";
+@import "molecules/side__text-list";
 // @import "molecules/article";
 
  	/*js-plugins*/

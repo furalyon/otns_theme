@@ -3,13 +3,13 @@
 \*------------------------------------*/
 
 %site-wrap {
-	max-width:75em;
-	@extend .auto-margin;
+	// max-width:100em;
+	// @extend .auto-margin;
 }
 
 .site-header,
-.site-nav,
 .content-wrap,
 .site-footer {
-	@extend %site-wrap;
+	// @extend %site-wrap;
+	@extend .island-without-margin;
 }

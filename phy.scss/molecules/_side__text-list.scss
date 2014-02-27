@@ -1,0 +1,10 @@
+/*------------------------------------*\
+    $SIDE__TEXT-LIST
+\*------------------------------------*/
+
+.side__text-list {
+	@extend .list-no-bullets-margins;
+	> li {
+		margin-bottom:$half-spacing-unit/2;
+	}
+}

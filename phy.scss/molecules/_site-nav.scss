@@ -3,5 +3,55 @@
 \*------------------------------------*/
 
 .site-nav {
-	// @extend %responsive-nav;
+	> ul {
+		@extend .list--inline-block;
+		margin:0;
+		> li {
+			position: relative;
+			border-left: $default-border;
+			&:last-child {
+				border-right: $default-border;
+			}
+		}
+		> li > a {
+			@include font-size(20px);
+			@extend .list--inline-block__link;
+			padding:$half-spacing-unit;
+		}
+		a {
+			color: $base-font-color;
+			&:hover {
+				color: $brand-color-complement;
+				background: $brand-color-2;
+			}
+		}
+	}
+
+	.site-nav__sub-menu,
+	.tooltip {
+		position: absolute;
+		top: 100%;
+		left:-9999px;
+		z-index: 100;
+		min-width: 180px;
+		max-width:300px;
+		background: rgba($base-bg-color,0.9);
+		border: $default-border;
+	}
+
+	li:hover > .site-nav__sub-menu,
+	li:hover > .tooltip {
+		left:-2px;
+	}
+
+	.site-nav__sub-menu {
+		@extend .list--block;
+		a {
+			@extend .list--block__link;
+		}
+	}
+
+	.tooltip {
+		padding: 5px;
+	}
 }

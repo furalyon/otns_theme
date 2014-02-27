@@ -5,5 +5,21 @@
 }
 
 .head-nav {
-	@extend .list--inline;
+	@extend .list--inline-block;
+	margin-bottom:0;
+	a {
+		@extend .list--inline-block__link;
+		color: $base-font-color;
+		padding-left:$half-spacing-unit;
+		padding-right:$half-spacing-unit;
+		&:hover {
+			color: $brand-color;
+		}
+	}
+	li {
+		border-right:1px solid $base-ui-color;
+		&:last-child {
+			border:none;
+		}
+	}
 }

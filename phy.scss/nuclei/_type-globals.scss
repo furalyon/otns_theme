@@ -27,8 +27,9 @@
     @extend .brand-type;
 }
 .delta {
-    @include font-size($h4-size);
+    @include font-size($h4-size, $line-height:false);
     @extend .brand-type;
+    line-height:1.5;
 }
 .epsilon {
     @include font-size($h5-size);

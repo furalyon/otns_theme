@@ -4,7 +4,7 @@
 
 .logo {
 	text-align: center;
-	padding:$half-spacing-unit;
+	margin-bottom: $half-spacing-unit;
 }
 
 .logo__img{
@@ -13,8 +13,14 @@
 	/**
 	 * exact size of the bitmap version of the logo
 	 */
-	width: 468px;
-	height: 78px;
+	width: 234px;
+	height: 39px;
+
+	@include grid-media-query('lap') {
+		width: 468px;
+		height: 78px;
+	}
+
 
 	background-image:  url(#{$static_url}images/logo.png);
 	background-repeat: no-repeat;
