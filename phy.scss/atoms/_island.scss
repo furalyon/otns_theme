@@ -20,7 +20,8 @@
 .island, .island-without-margin {
     padding:$half-spacing-unit;
     @include media-query(40.05em) {
-      padding:$base-spacing-unit;
+      padding-left:$base-spacing-unit;
+      padding-right:$base-spacing-unit;
     }
 
 }

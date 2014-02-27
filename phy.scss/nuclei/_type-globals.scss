@@ -20,24 +20,22 @@
 .beta {
     @include font-size($h2-size);
     @extend .brand-type;
-    color:$brand-color;
 }
 .gamma {
     @include font-size($h3-size);
-    @extend .brand-type;
+    text-transform: uppercase;
 }
 .delta {
-    @include font-size($h4-size, $line-height:false);
-    @extend .brand-type;
-    line-height:1.5;
+    @include font-size($h4-size);
+    text-transform: uppercase;
 }
 .epsilon {
     @include font-size($h5-size);
-    @extend .brand-type;
+    text-transform: uppercase;
 }
 .zeta {
     @include font-size($h6-size);
-    @extend .brand-type;
+    text-transform: uppercase;
 }
 
 

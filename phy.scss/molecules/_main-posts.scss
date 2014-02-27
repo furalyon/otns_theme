@@ -3,12 +3,16 @@
 \*------------------------------------*/
 
 .main-posts {
-	@extend .list--block;
+	// @extend .list--block;
 }
 
 .main-posts__article {
-	@extend .list--block__li;
+	// @extend .list--block__li;
+	background: $base-bg-color;
+	border-radius: $brand-round;
 	@extend .media;
+	@extend .islet;
+	margin-bottom:$half-spacing-unit;
 }
 
 .main-posts__article__img {
@@ -22,13 +26,8 @@
 	@extend %lap--two-thirds;
 	// @extend %desk--three-quarters;
 
-	> h3 a {
-		color: $base-font-color;
-		@extend .delta;
-		&:hover {
-			color: $brand-color-complement;
-			background: $brand-color-2;
-		}
+	> h2 a {
+		@extend .link--heading;
 	}
 
 	.list--inline__prefix {
