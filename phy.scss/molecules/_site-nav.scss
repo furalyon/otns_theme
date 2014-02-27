@@ -10,19 +10,10 @@
 		margin:0;
 		> li {
 			position: relative;
-			// border-right: $default-border;
-			// border-left: $default-border;
-			// border-radius: 20px;
-			// &:last-child {
-			// 	border-right: none;
-			// }
-			// &:first-child {
-			// 	border-left: none;
-			// }
 		}
 		> li > a {
 			@extend .list--inline-block__link;
-			padding:8px $base-spacing-unit;
+			padding:$half-spacing-unit $base-spacing-unit;
 			&:hover {
 				color: $brand-color;
 			}

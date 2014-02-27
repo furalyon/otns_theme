@@ -2,14 +2,15 @@
     $SITE-WRAPPER
 \*------------------------------------*/
 
-%site-wrap {
-	// max-width:100em;
-	// @extend .auto-margin;
-}
 
 .site-header,
 .content-wrap,
 .site-footer {
-	// @extend %site-wrap;
-	@extend .island-without-margin;
+	@extend .island;
+}
+
+.content-wrap,
+.site-footer {
+	max-width: 80em;
+	@extend .auto-margin;
 }

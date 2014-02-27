@@ -11,7 +11,7 @@
  * more-link for backwards compatibility with my previous habit
  */
 .more-link {
-	position:absolute;
-	bottom:$half-spacing-unit/2;
-	right:$half-spacing-unit;
+	&:after {
+		content:' \2192';
+	}
 }

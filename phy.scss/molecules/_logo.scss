@@ -19,6 +19,7 @@
 	@include grid-media-query('lap') {
 		width: 468px;
 		height: 78px;
+		margin:$half-spacing-unit;
 	}
 
 
