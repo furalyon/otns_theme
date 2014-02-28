@@ -4,22 +4,26 @@
 
 .logo {
 	text-align: center;
-	margin-bottom: $half-spacing-unit;
 }
 
 .logo__img{
 	display: inline-block;
+	margin: $half-spacing-unit;
 
 	/**
-	 * exact size of the bitmap version of the logo
+	 * Same image served in 50% space for high density screens
 	 */
 	width: 234px;
 	height: 39px;
 
 	@include grid-media-query('lap') {
+
+		/**
+		 * exact size of the bitmap version of the logo
+		 */
 		width: 468px;
 		height: 78px;
-		margin:$half-spacing-unit;
+		margin:$base-spacing-unit;
 	}
 
 

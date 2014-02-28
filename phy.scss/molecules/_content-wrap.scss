@@ -7,16 +7,13 @@
 }
 
 .site-main,
-.site-side,
-.site-side__left,
-.site-side__right {
+.site-side {
 	@extend %grid__item;
 	@extend %one-whole;
 }
 
 .site-main {
 	@extend %desk--two-thirds;
-	@extend %wide--three-fifths;
 	@include grid-media-query('desk') {
 		padding-right: $half-spacing-unit;
 	}
@@ -24,12 +21,7 @@
 
 .site-side {
 	@extend %desk--one-third;
-	@extend %wide--two-fifths;
 	@include grid-media-query('desk') {
 		padding-left: $half-spacing-unit;
 	}
-}
-
-.site-side__left, .site-side__right {
-	@extend %wide--one-half;
 }

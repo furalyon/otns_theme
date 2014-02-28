@@ -5,6 +5,13 @@
 .side__text-list {
 	@extend .list-no-bullets-margins;
 	> li {
-		margin-bottom:$half-spacing-unit/2;
+		margin-bottom:$half-spacing-unit*3/4;
+	}
+	a {
+		color: $base-font-color;
+		&:hover {
+			color: $brand-color;
+			text-decoration: underline;
+		}
 	}
 }

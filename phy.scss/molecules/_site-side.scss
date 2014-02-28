@@ -1,0 +1,32 @@
+/*------------------------------------*\
+		$SITE-SIDE
+\*------------------------------------*/
+
+.site-side__section {
+	@extend .islet;
+	background: $base-bg-color;
+	border-radius: $brand-round;
+}
+
+.site-side__heading {
+	padding-top: $half-spacing-unit/2;
+	text-align: center;
+}
+
+.site-side .search form {
+	margin: $half-spacing-unit 0;
+	.text-input {
+		width:80%;
+		padding: 4px 6px;
+	}
+	.btn--submit {
+		min-width:10%;
+		padding: 4px;
+	}
+}
+
+.placeholder {
+	color: lighten($base-font-color, 50%);
+	font-style: italic;
+}
+
